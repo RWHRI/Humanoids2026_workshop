@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanoids 2026 - Real World Physical and Social Human-Robot Interaction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+	    background-image: url("humanoid_handover_man_full.jpg");
+	    background-size: cover;
+	    background-position: center;
+	    opacity: 0.95;
+        }
+        .navbar {
+            margin-bottom: 20px;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .schedule {
+            display: none;
+        }
+	
+        /* Styles for all  jumbotron */
+        .jumbotron {
+            background-color: #ddffff; /* Lighter blue background for Program */
+	}
+
+        /* Styles for the "Home" jumbotron */
+	.home-jumbotron {
+            background-color: #ddffff; /* Light blue background for Home */
+	}
+
+	.speaker-img {
+        width: 200px; /* Set a fixed width */
+        height: 200px; /* Set a fixed height */
+        object-fit: contain; /* Ensures the image is properly cropped */
+        border-radius: 50%; /* Optional: Make the images circular */
+        display: block;
+        margin: 0 auto 10px; /* Center the image */
+        }
+
+        .speaker-card {
+        text-align: center; /* Center text and image */
+        margin-bottom: 30px;
+		text-align: justify;	
+       }
+
+       .organizer-img {
+        width: 150px; /* Set a fixed width */
+        height: 150px; /* Set a fixed height */
+        object-fit: contain; /* Ensures the image is properly cropped */
+        border-radius: 50%; /* Optional: Make the images circular */
+        display: block;
+        margin: 0 auto 10px; /* Center the image */
+        }
+
+        .organizer-card {
+        text-align: center; /* Center text and image */
+        margin-bottom: 30px;
+       }
+
+	
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">RW-HRI Humanoids 2026</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('home')">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('program')">Program</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('speakers')">Speakers</a>
+            </li>
+	    <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('accepted-papers')">Accepted Papers for Spotlight</a>
+            </li>
+	    <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('contributions')">Call for Contributions</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="showSection('contact')">Organizers and Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container" id="home">
+    <div class="jumbotron home-jumbotron">
+        <h1 class="display-4">Long-Term Human-Humanoid Co-Adaptation</h1>
+        <p class="lead">3rd Workshop on Real-World Physical and Social Human-Robot Interaction in the 2026 IEEE-RAS 25th International Conference on Humanoid Robots (Humanoids), 6th December 2026, California, USA.</p>
+		<p>The website for the first edition of this workshop at IEEE-Humanoids 2024, featuring proceedings, accepted papers, and a picture gallery, can be accessed at: <a href="https://rwhri.github.io/Humanoids2024_workshop/">https://rwhri.github.io/Humanoids2024_workshop/</a> </p>    		
+		<p>The website for the second edition of this workshop at IEEE-Humanoids 2025, featuring proceedings, accepted papers, and a picture gallery, can be accessed at: <a href="https://rwhri.github.io/Humanoids2025_workshop/">https://rwhri.github.io/Humanoids2025_workshop/</a> </p>    		
+		<p>The workshop will take place in a hybrid mode and available for online participants via Teams: TBD </p>    
+        <hr class="my-4">
+
+        <p> With the increasing pace of innovation in humanoid robotics, it is important to take stock of
+current achievements and what could realistically come next.Thanks to their physical
+capabilities, humanoid robots have the potential to assist humans in a wide range of scenarios -
+homes, hospitals, public spaces, and workplaces - yet significant technological advances are
+still required. Early Human–Robot Interaction (HRI) systems often relied on limited,
+single-modality interactions.Today, however, there is a growing expectation for richer, more
+natural, and even personalized forms of interaction. Humanoid robots must not only perceive
+and interpret diverse human cues, but also respond in ways that are context-aware, socially
+intelligent, and acceptable to users. Achieving this requires moving beyond short-term
+interaction toward long-term human–robot co-adaptation. To this end, robotic systems must
+incorporate mechanisms to recognize and overcome their own limitations, continuously adapting
+their behavior to users and learning from natural human inputs. These challenges become even
+more pronounced outside controlled environments, where variability and unpredictability inhuman behavior are the norm. ​
+This third edition of our Human-Robot Interaction workshop focuses on the key challenges that
+currently limit the adoption of humanoid technologies in real-world applications. In particular, we
+aim to foster discussion on how robots can represent and understand their own skills, and
+model human behavior and state. From these foundations, mutual adaptations is the follow-up,
+with learning from the human guidance the next step to overcome their limits. From the user
+perspective, interactions must be felt as natural and intuitive as possible, personalizable, and
+they must address the ethical and societal implications associated with long-term human–robot
+coexistence.​
+We invite speakers from both academia and industry recognizing their complementary roles:
+academia in pushing the boundaries of research, and industry in translating these advances into
+robust real-world systems. Special attention will be given to adaptive behaviors in humanoids,
+robot self-awareness, online and incremental learning, personalized interaction, shared
+autonomy, and cognitive and behavioral modeling of humans. A central goal is to advance the
+design of user-centered interfaces that can adapt over time to diverse users and contexts.
+The workshop will feature keynote talks by established researchers from academia and industry,
+an interactive panel discussion to actively engage the audience, and contributions from
+emerging researchers through short talks and a poster session. We aim to foster dialogue
+across disciplines and experience levels to better understand current trends and future
+challenges. A dedicated website will provide all relevant information, and workshop
+contributions will be made publicly available to maximize visibility and impact: </p>
+
+	    <ul>
+		  <li>Social Interaction with Humanoid Robots.</li>
+		  <li>Physical Interaction with Humanoid Robots.</li>
+		  <li>Real-world applications and case studies of embodied intelligence in Physical/Social HRI</li>
+		  <li>Advances in Physical/Social HRI in industry and academia.</li>
+		  <li>Bridging the gap between physical and social human-robot interaction</li>
+		  <li>Machine learning for multimodal human-robot interaction</li>
+		  <li>Multimodal sensing and sensor fusion.</li>
+		  <li>Ethics, Safety, and transparency of interacting with robots physically and socially</li>
+	    </ul>
+
+	    <p> This workshop is organized by:</p>
+	    <ul>
+		  <li>Dr. Parag Khanna, KTH, Sweden.</li>
+		  <li>Dr. Davide Torielli, TU Delft.</li>
+      <li>Dr. Damiano Gasperini, IIT, Italy.</li>  
+		  <li>Prof. Ziwei Wang, Lancaster University, UK.</li>
+		  <li>Dr. Angela Faragasso, Fingervision, Japan.</li>
+		  <li>Dr. Nikos Tsagarakis, IIT, Italy.</li>
+      <li>Dr. Debasmita Ghose, Yale University, USA.</li>  
+      <li>Prof. Luka Peternel, TU Delft, Netherlands.</li>  
+		  <li>Prof. Christian Smith, KTH, Sweden.</li>
+        
+	    </ul>
+
+	    <p> We acknolwedge the financial support by: </p>
+    <div class="row">
+        <!-- Organizer 1 -->
+	    
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="digital_futures.jpg" alt="Digital Futures" class="organizer-img">
+                <h6>Digital Futures,KTH, Sweden</h6>
+            </div>
+        </div>
+
+	<!-- Organizer 2 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="haria.jpeg" alt="Project HARIA" class="organizer-img">
+                <h6> European Project H2020 Haria (GA No. 101070292)</h6>
+            </div>
+        </div>
+
+	<!-- Organizer 3 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="eu_flag.jpeg" alt="EU" class="organizer-img">
+                <h6>European Union</h6>
+            </div>
+        </div>
+    </div>
+     </div>
+</div>
+
+<div class="container schedule" id="program">
+    <div class="jumbotron">
+        <h2>Program Schedule</h2>
+	<p> The workshop is held in hybrid mode, Please Join the online Meeting: TBD,</p>
+	<p> If you are attending, please fill up this form alongwith some questions for the panelists in our panel discussions here: TBD</p>
+
+        <table border="1" cellpadding="6" cellspacing="0">
+	  <tr>
+	    <td>13:20 - 13:30</td>
+	    <td>Introduction</td>
+	  </tr>
+	  <tr>
+	    <td>13:30 - 14:00</td>
+	    <td>Keynote 1 – Professor Tetsuya Ogata, Title: Towards Open-Source Foundations in Robotic Control Systems </td>
+	  </tr>
+	  <tr>
+	    <td>14:00 - 14:30</td>
+	    <td>Keynote 2 – Professor Tamim Asfour, Title: Humanoid Robotics – Engineering Versatile Physical Intelligence</td>
+	  </tr>
+	  <tr>
+	    <td>14:30 - 15:00</td>
+	    <td>Keynote 3 – Francesco Ferro, CEO, Pal Robotics, Title: 20 Years doing Humanoids</td>
+	  </tr>
+	  <tr>
+	    <td>15:00 - 15:30</td>
+	    <td>Panel Discussion 1 on “Academia and Industry—Bridging the Gap for Real-World Human-Humanoid Robot Interaction”</td>
+	  </tr>
+	  <tr>
+	    <td>15:30 – 16:00</td>
+	    <td>Coffee break and Poster Session for Accepted Contributed Papers.</td>
+	  </tr>
+	  <tr>
+	    <td>16:00 - 16:20</td>
+	    <td>Spotlight Talks from Contributed Papers (See Accepted Papers for more)</td>
+	  </tr>
+	  <tr>
+	    <td>16:20 - 16:45</td>
+	    <td>Keynote 5 – Assistant Professor Maria Pozzi, Title: User-centered human-robot augmentation</td>
+	  </tr>
+	  <tr>
+	    <td>16:45 - 17:05</td>
+	    <td>Keynote 6 – Postdoctoral Researcher Marta Lagomarsino, Title: Toward Adaptive and Personalised Robot Behaviour via Human State Monitoring and Expert Feedback </td>
+	  </tr>
+	  <tr>
+	    <td>17:05 - 17:10</td>
+	    <td>Closing Remarks</td>
+	  </tr>
+	</table>
+
+    </div>
+</div>
+
+
+<div class="container schedule" id="speakers">
+<div class="jumbotron home-jumbotron">
+        <h2>Speakers</h2>
+       <p>Meet our esteemed speakers from academia and industry.</p>
+
+	    <div class="row">
+	        <!-- Speaker 1 -->
+	        <div class="col-md-6">
+	            <div class="speaker-card">
+	                <img src="tamim_asfour.jpg" alt="Katja Mombaur" class="speaker-img">
+	                <h3>Tamim Asfour</h3>
+	                <p>Professor, Karlsruhe Institute of Technology, Germany</p>
+					<p><strong>Panelist for Panel Discussion</strong></p>
+	                <p><strong>Presentation Title: Humanoid Robotics – Engineering Versatile Physical Intelligence  </strong></p>
+					<p>Humanoid robots represent one of the most ambitious goals in robotics: creating machines with versatile physical intelligence to operate seamlessly in human-centered environments. The talk discusses the current state of humanoid robotics, focusing on the engineering challenges of developing embodied holistic systems that integrate AI and mechatronics to perform complex manipulation tasks and interact naturally with humans. Examples from research and emerging applications will demonstrate current progress and highlight the requirements for achieving truly versatile physical intelligence in humanoid robot systems acting in real-world environments. The talk will address fundamental questions about realistic deployment timelines for and identifies critical research directions needed for the transition from laboratories to homes and workplaces in the coming years. </p>
+	            </div>
+	        </div>
+
+			<div class="col-md-6">
+	            <div class="speaker-card">
+	                <img src="ogata_squarecrop.jpg" alt="Tetsuya Ogata" class="speaker-img">
+	                <h3>Tetsuya Ogata</h3>
+	                <p>Professor Waseda University, Joint Appointed Fellow, AIST, Japan</p>
+	                <p><strong>Panelist for Panel Discussion</strong></p>
+					<p><strong>Presentation Title: Towards Open-Source Foundations in Robotic Control Systems</strong></p>
+					<p>Presentation Abstract: In recent years, there has been an intensified global effort, particularly in the United States and China, to develop foundational robot models capable of End-to-End robot control. These models hold the promise of accelerating robotic advancements and significantly broadening their applications across various domains. However, while the models themselves are becoming increasingly accessible, key utilization data and development methodologies remain largely undisclosed, posing challenges to their practical application. In this presentation, I will introduce the ecosystem for open foundational robot model development within the AI Robot Association (AIRoA), where I serve as Chairman, and discuss the prospects of these models in advancing robotics research and application.
+</p>
+	            </div>
+	        </div>
+
+	       
+	        
+	    </div>
+	
+	    <div class="row">
+
+			<div class="col-md-6">
+	            <div class="speaker-card">
+	                <img src="francesco.jpeg" alt="Pal Robotics" class="speaker-img">
+	                <h3> Francesco Ferro, CEO, Pal Robotics</h3>
+					<p><strong>Panelist for Panel Discussion</strong></p>
+	                <p><strong>Presentation:20 Years doing Humanoids </strong> </p>
+	            </div>
+	        </div>
+			
+		
+
+		<!-- Speaker 2 -->
+	        <div class="col-md-6">
+	            <div class="speaker-card">
+	                <img src="maria_pozzi.jpg" alt="Eiichi Yoshida" class="speaker-img">
+	                <h3>Maria Pozzi</h3>
+	                <p>Assistant Professor, University of Siena, Italy</p>
+	                <p><strong>Presentation Title: User-centered human-robot augmentation</strong></p>
+					<p>Presentation Abstract: The idea of augmenting human manipulation capabilities through supernumerary robotic limbs which move in coordination with the biological ones is potentially disruptive in the field of human-robot interaction. It finds its most compelling application in assisting people with disabilities and requires a deep connection between the human and the robot. In this context, a user-centered perspective is essential to identify the diverse needs of end-users and ensure the envisaged level of human-robot sensorimotor integration through suitably designed interfaces</p>
+	            </div>
+	        </div>
+		    
+
+	    </div>
+	
+	    <div class="row">
+	        <!-- Speaker 5 -->
+	 <!-- Speaker 1 -->
+	        <!-- Speaker 3 -->
+	        
+
+			 <div class="col-md-6">
+	            <div class="speaker-card">
+	                <img src="marta.png" alt="TBD" class="speaker-img">
+	                <h3>Marta Lagomarsino</h3>
+	                <p>Postdoctoral Researcher, Italian Institute of Technology, Italy</p>
+	                <p><strong>Presentation: Toward Adaptive and Personalised Robot Behaviour via Human State Monitoring and Expert Feedback</strong></p>
+					<p>Presentation Abstract: Robotics and AI have reached remarkable capabilities in complex tasks and environments. However, meaningful human engagement with these technologies remains limited, as robots often struggle to understand and personalise interactions to human needs and intentions. This talk presents methods to infer human psycho-physical states and preferences by observing movement patterns during interaction, and shows how this information can be exploited to adapt robot behavior for workload mitigation and seamless collaboration. It will discuss the intuitive transfer of human skills to robots by capturing hand movements and object interactions in a video demonstration and refining the robot plans via natural language inputs. Together, these directions point toward more personalised, adaptive, and intuitive human-robot collaboration.</p>
+	            </div>
+	        </div>
+
+    
+
+		<div class="col-md-6">
+	            <div class="speaker-card">
+	                <img src="eiichi.jpeg" alt="Eiichi Yoshida" class="speaker-img">
+	                <h3>Eiichi Yoshida</h3>
+	                <p>Professor, Tokyo University of Science, Japan</p>
+	                <p><strong>Panelist for Panel Discussion</strong></p>
+	            </div>
+	    </div>
+	</div>
+	<div class="row">
+		
+	        
+	        <!-- Speaker 5 -->
+	 <div class="col-md-6">
+            <div class="speaker-card">
+                <img src="enrico.jpg" alt="Enrico Mingo Hoffman" class="speaker-img">
+                <h3>Enrico Mingo Hoffman</h3>
+                <p>ISFP Researcher, Centre Inria de l'Université de Lorraine & Loria, Nancy, France</p>
+                <p><strong>Panelist for Panel Discussion</strong></p>
+            </div>
+        </div>
+	</div>
+</div>
+</div>
+
+<div class="container spotlight" id="accepted-papers">
+    <div class="jumbotron">
+        <h2>Accepted Papers for Spotlight Presentations</h2>
+
+        <!-- Paper 1 -->
+        <div class="paper-entry">
+            <h4><a href="https://drive.google.com/file/d/12LUtufVrL50IdpLFAIokTk3WgH9SEna2/view?usp=sharing" target="_blank">RAMBO: RL-augmented Model-based Whole-body Control for Loco-manipulation</a></h4>
+            <p><strong>Authors:</strong> Jin Cheng, Dongho Kang, Gabriele Fadini, Guanya Shi, Stelian Coros</p>
+            <details>
+                <summary><em>Abstract</em></summary>
+                <p>Loco-manipulation, physical interaction of various objects that is concurrently coordinated with locomotion, remains a major challenge for legged robots due to the need for both precise end-effector control and robustness to unmodeled dynamics. While model-based controllers provide precise planning via online optimization, they are limited by model inaccuracies. In contrast, learning-based methods offer robustness, but they struggle with precise modulation of interaction forces.</p>
+                <p>We introduce RAMBO, a hybrid framework that integrates model-based whole-body control within a feedback policy trained with reinforcement learning. The model-based module generates feedforward torques by solving a quadratic program, while the policy provides feedback corrective terms to enhance robustness. We validate our framework on a quadruped robot across a diverse set of real-world loco-manipulation tasks, such as pushing a shopping cart, balancing a plate, and holding soft objects, in both quadrupedal and bipedal walking. Our experiments demonstrate that RAMBO enables precise manipulation capabilities while achieving robust and dynamic locomotion.</p>
+            </details>
+        </div>
+
+        <!-- Paper 2 -->
+        <div class="paper-entry">
+            <h4><a href="https://drive.google.com/file/d/1UdTq2Z_6wq_QwL1X5avzX0XaQTi7MKiB/view?usp=sharing" target="_blank">An AI-based Semantic-driven Framework for Human-Robot Task Awareness</a></h4>
+            <p><strong>Authors:</strong> Damiano Gasperini, Luca Muratore, Nikos Tsagarakis</p>
+            <details>
+                <summary><em>Abstract</em></summary>
+                <p>The advancement of autonomous robots still needs a comprehensive robot awareness framework for the execution of human-robot tasks, enabling the generation of autonomous behaviors and responses in dynamic environments. Situation awareness aims to enhance robot’s autonomy and adaptation during task execution by effectively combining key capabilities, such as reasoning, planning, projection of action’s effects into future states, as well as perception and comprehension of the surroundings.</p>
+                <p>In this work, we propose a novel AI-based framework for semantic-driven task awareness that addresses the intricate challenges of perceiving, navigating, and manipulating dynamic environments. Our objective of achieving effective robot awareness is based on the perceived environment semantics and on the combined use of online planning, reasoning, and monitoring, while also allowing recovery from task-level failures. The presented method is designed as a set of online modules for (a) collecting and analyzing sensors’ data as well as updating the world model description, (b) real-time decision-making and task-state monitoring, and (c) execution of each action. Being highly modular and configurable to assorted robotic systems, the proposed framework aims to adapt to diverse robotic platforms and tasks. In this work, a preliminary description of the framework comes along with demonstrative human-robot tasks to showcase its capabilities on both the CENTAURO robot and on a custom 6 DoF manipulator.</p>
+            </details>
+        </div>
+
+        <!-- Paper 3 -->
+        <div class="paper-entry">
+            <h4><a href="https://drive.google.com/file/d/1Se8x5zmhKTKas2HujOCDEZ1pg3z6AGvb/view?usp=sharing" target="_blank">InteractionFlow: Learning Efficient, Effective Interactive Behaviours with Conditional Flow Matching</a></h4>
+            <p><strong>Authors:</strong> Vignesh Prasad, Zixuan Fang, Georgia Chalvatzaki</p>
+            <details>
+                <summary><em>Abstract</em></summary>
+                <p>To enable seamless Human-Robot Interaction (HRI), a robot must react to a human in a timely manner while accurately maintaining physical proximity with the human in the context of the task at hand. Recent approaches have shown competitive performance in learning multimodal behaviours for Human-Robot Interactions from demonstrations. In the context of learning-based approaches, ensuring fast inference can enable robots to act more reactively to the human interaction partner, thereby improving the perceived interactiveness of the robot.</p>
+                <p>We propose InteractionFlow, a novel method that models a joint distribution between the human and the robot actions using recent advancements in Imitation Learning using Conditional Flow Matching to enable learning fast, reactive, interactive behaviours from demonstrations. We find that using the generative abilities of Flow Matching enables InteractionFlow to achieve state-of-the-art results on example human-robot collaboration tasks in simulation, which require a high degree of precision while ensuring a seamless and reactive interaction.</p>
+            </details>
+        </div>
+    </div>
+</div>
+
+	
+<div class="container schedule" id="contributions">
+    <div class="jumbotron">
+        <h2>Call for Contributions</h2>
+        <p>
+	We invite short paper submissions presenting late-breaking results, novel ideas, design case studies, or empirical findings on real-world physical and social human-robot interaction with humanoids. Accepted authors will receive ~5 minutes for spotlight presentations and participate in a 40-minute interactive poster session, engaging with an expected audience of 50–60 participants, including leading experts from academia and industry. Submit your work for a valuable opportunity to share, discuss, and collaborate on the key challenges and advances shaping the future of Human-Humanoids Robot Interaction. <br>
+            <strong>Date:</strong> October 2, 2025 (Full-day workshop)<br>
+            <strong>Location:</strong> Hybrid (Seoul, South Korea and online), as part of The 2025 IEEE-RAS International Conference on Humanoid Robots, IEEE-Humanoids 2025.<br>
+            <strong>Submission Instruction:</strong> Email your contributions to: <a href="mailto:whsop.realworld.hri@gmail.com">whsop.realworld.hri@gmail.com</a><br>
+	    <strong>Important: Special Session in a IEEE-RAS Journal! </strong> We are currently in the process of submitting a proposal for a dedicated special issue in a related IEEE-Robotics and Automation Society journal (e.g. RA-L), focusing on advances in physical and social human-humanoid interaction, multimodal perception, adaptive communication, and real-world applications with humanoid robots, reflecting the key themes of the workshop. All workshop contributions will be invited to submit extended versions of their work for consideration in this special issue. If you are a researcher interested in contributing to this special issue, please contact us for more information.<br>
+            <strong>Contact for submissions:</strong> <a href="mailto:paragk@kth.se">paragk@kth.se</a>, <a href="mailto:paragk@kth.se">davide.torielli@iit.it</a>.
+        </p>
+        
+        <h3>IMPORTANT DATES</h3>
+        <ul>
+	    <li><strong>Submissions start:</strong> July 27, 2025</li>
+            <li><strong>Submission deadline:</strong> September 20, 2025</li>
+            <li><strong>Notification of acceptance:</strong> September 25, 2025</li>
+            <li><strong>Camera-ready deadline:</strong> September 27, 2025</li>
+            <li><strong>Workshop:</strong> October 2, 2025</li>
+        </ul>
+        <p>All deadlines are at 23:59 Anywhere on Earth time.</p>
+        <hr>
+        <hr>
+
+        <h3>SUBMISSION GUIDELINES</h3>
+        <p>
+            Manuscripts should be written in English and will undergo a single-blind review by the organizing committee and selected researchers from the field. The length should be 2-4 pages excluding references. We welcome contributions that include work in progress, preliminary results, technical reports, case studies, surveys, and state-of-the-art research. Position papers are also welcome and should be at least 2 pages excluding references. These can be research project proposals or plans without results. Authors must use the Humanoids templates provided, formatted for US Letter. The templates can be downloaded below.
+        </p>
+        <p><strong>Manuscript Templates:</strong> <a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fras.papercept.net%2Fconferences%2Fsupport%2Ftex.php&data=05%7C02%7Cyadollah%40live.lancs.ac.uk%7C4ad413befc614cd18bf508dc7660b31a%7C9c9bcd11977a4e9ca9a0bc734090164a%7C0%7C0%7C638515404894323557%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=%2Fi%2B5zkzbpQa%2BM360ywxP0vBQR9gPfPs0vTolpHYrqS8%3D&reserved=0" target="_blank">LaTeX</a>, <a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fras.papercept.net%2Fconferences%2Fsupport%2Fword.php&data=05%7C02%7Cyadollah%40live.lancs.ac.uk%7C4ad413befc614cd18bf508dc7660b31a%7C9c9bcd11977a4e9ca9a0bc734090164a%7C0%7C0%7C638515404894330332%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=XltFZwuZhQFRBmFIKSUVuFWXg27Yr8qTTtIofTl%2FbmI%3D&reserved=0" target="_blank">Word</a></p>
+    </div>
+</div>
+
+
+<div class="container schedule" id="contact">
+ <div class="jumbotron">
+    <h2>Organizers and Contact</h2>
+    <p><strong>Organizers:</strong></p>
+    <div class="row">
+	<!-- Organizer 2 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="parag.jpeg" alt="Parag Khanna" class="organizer-img">
+                <h3>Parag Khanna</h3>
+                <p>PostDoctoral Researcher, KTH Royal Institute of Technology, Sweden <a href="mailto:paragk@kth.se">paragk@kth.se</a></p>
+            </div>
+        </div>
+	    
+        <!-- Organizer 1 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="davide.jpeg" alt="Davide Torielli" class="organizer-img">
+                <h3>Davide Torielli</h3>
+                <p>PostDoctoral Researcher, Italian Institute of Technology, Italy: <a href="mailto:davide.torielli@iit.it">davide.torielli@iit.it</a> </p>
+            </div>
+        </div>
+
+	<!-- Organizer 3 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="ziwei.jpg" alt="Ziwei Wang" class="organizer-img">
+                <h3>Ziwei Wang</h3>
+                <p>Assistant Professor, Lancaster University, United Kingdom: <a href="mailto:z.wang82@lancaster.ac.uk">z.wang82@lancaster.ac.uk</a></p>
+            </div>
+        </div>
+    </div>
+     <div class="row">
+        <!-- Organizer 1 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="angela.jpg" alt="Angela Faragasso" class="organizer-img">
+                <h3>Angela Faragasso</h3>
+                <p> Lead Researcher Engineer, Finger Vision Inc., Japan: <a href="mailto:angela.faragaso@fingervision.biz">angela.faragaso@fingervision.biz</a></p>
+            </div>
+        </div>
+
+	<!-- Organizer 2 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="davide_prof.jpeg" alt="Nikos Tsagarakis" class="organizer-img">
+                <h3>Nikos Tsagarakis</h3>
+                <p>Principal Investigator, Italian Institute of Technology, Italy: <a href="mailto:Nikos.tsagarakis@iit.it">Nikos.tsagarakis@iit.it</a></p>
+            </div>
+        </div>
+
+	<!-- Organizer 3 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="chirstian.jpg" alt="Christian Smith" class="organizer-img">
+                <h3>Christian Smith</h3>
+                <p>Associate Professor, KTH Royal Institute of Technology, Sweden: <a href="mailto:ccs@kth.se">ccs@kth.se</a></p>
+            </div>
+        </div>
+    </div>
+<p> We acknolwedge the financial support by: </p>
+    <div class="row">
+        <!-- Organizer 1 -->
+	    
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="digital_futures.jpg" alt="Digital Futures" class="organizer-img">
+                <h3>Digital Futures,KTH, Sweden</h3>
+            </div>
+        </div>
+
+	<!-- Organizer 2 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="haria.jpeg" alt="Project HARIA" class="organizer-img">
+                <h3> European Project H2020 Haria (GA No. 101070292)</h3>
+            </div>
+        </div>
+
+	<!-- Organizer 3 -->
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="eu_flag.jpeg" alt="EU" class="organizer-img">
+                <h3>European Union</h3>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+<div class="footer">
+    <p>&copy; 2025 Humanoids RW-HRI. All rights reserved.</p>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+    function showSection(sectionId) {
+        // Hide all sections
+        document.querySelectorAll('.container').forEach(function(section) {
+            section.style.display = 'none';
+        });
+        // Show the selected section
+        document.getElementById(sectionId).style.display = 'block';
+    }
+    
+    // Show the home section by default
+    showSection('home');
+</script>
+</body>
+</html>
