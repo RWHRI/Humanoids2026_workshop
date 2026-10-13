@@ -5,72 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Humanoids 2026 - Real World Physical and Social Human-Robot Interaction</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-	    background-image: url("humanoid_handover_man_full.jpg");
-	    background-size: cover;
-	    background-position: center;
-	    opacity: 0.95;
-        }
-        .navbar {
-            margin-bottom: 20px;
-        }
-        .container {
-            margin-top: 20px;
-        }
-        .footer {
-            margin-top: 20px;
-            padding: 20px 0;
-            background-color: #f8f9fa;
-            text-align: center;
-        }
-        .schedule {
-            display: none;
-        }
-	
-        /* Styles for all  jumbotron */
-        .jumbotron {
-            background-color: #ddffff; /* Lighter blue background for Program */
-	}
-
-        /* Styles for the "Home" jumbotron */
-	.home-jumbotron {
-            background-color: #ddffff; /* Light blue background for Home */
-	}
-
-	.speaker-img {
-        width: 200px; /* Set a fixed width */
-        height: 200px; /* Set a fixed height */
-        object-fit: contain; /* Ensures the image is properly cropped */
-        border-radius: 50%; /* Optional: Make the images circular */
-        display: block;
-        margin: 0 auto 10px; /* Center the image */
-        }
-
-        .speaker-card {
-        text-align: center; /* Center text and image */
-        margin-bottom: 30px;
-		text-align: justify;	
-       }
-
-       .organizer-img {
-        width: 150px; /* Set a fixed width */
-        height: 150px; /* Set a fixed height */
-        object-fit: contain; /* Ensures the image is properly cropped */
-        border-radius: 50%; /* Optional: Make the images circular */
-        display: block;
-        margin: 0 auto 10px; /* Center the image */
-        }
-
-        .organizer-card {
-        text-align: center; /* Center text and image */
-        margin-bottom: 30px;
-       }
-
-	
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -112,39 +47,21 @@
 		<p>The workshop will take place in a hybrid mode and available for online participants via Teams: TBD </p>    
         <hr class="my-4">
 
-        <p> With the increasing pace of innovation in humanoid robotics, it is important to take stock of
-current achievements and what could realistically come next.Thanks to their physical
-capabilities, humanoid robots have the potential to assist humans in a wide range of scenarios -
-homes, hospitals, public spaces, and workplaces - yet significant technological advances are
-still required. Early Human–Robot Interaction (HRI) systems often relied on limited,
-single-modality interactions.Today, however, there is a growing expectation for richer, more
-natural, and even personalized forms of interaction. Humanoid robots must not only perceive
-and interpret diverse human cues, but also respond in ways that are context-aware, socially
-intelligent, and acceptable to users. Achieving this requires moving beyond short-term
-interaction toward long-term human–robot co-adaptation. To this end, robotic systems must
-incorporate mechanisms to recognize and overcome their own limitations, continuously adapting
-their behavior to users and learning from natural human inputs. These challenges become even
-more pronounced outside controlled environments, where variability and unpredictability inhuman behavior are the norm. ​
-This third edition of our Human-Robot Interaction workshop focuses on the key challenges that
-currently limit the adoption of humanoid technologies in real-world applications. In particular, we
-aim to foster discussion on how robots can represent and understand their own skills, and
-model human behavior and state. From these foundations, mutual adaptations is the follow-up,
-with learning from the human guidance the next step to overcome their limits. From the user
-perspective, interactions must be felt as natural and intuitive as possible, personalizable, and
-they must address the ethical and societal implications associated with long-term human–robot
-coexistence.​
-We invite speakers from both academia and industry recognizing their complementary roles:
-academia in pushing the boundaries of research, and industry in translating these advances into
-robust real-world systems. Special attention will be given to adaptive behaviors in humanoids,
-robot self-awareness, online and incremental learning, personalized interaction, shared
-autonomy, and cognitive and behavioral modeling of humans. A central goal is to advance the
-design of user-centered interfaces that can adapt over time to diverse users and contexts.
-The workshop will feature keynote talks by established researchers from academia and industry,
-an interactive panel discussion to actively engage the audience, and contributions from
-emerging researchers through short talks and a poster session. We aim to foster dialogue
-across disciplines and experience levels to better understand current trends and future
-challenges. A dedicated website will provide all relevant information, and workshop
-contributions will be made publicly available to maximize visibility and impact: </p>
+        <p> 
+            Thanks to their physical capabilities, humanoid robots have the potential to assist humans in a wide range of scenarios - homes, 
+            hospitals, public spaces, and workplaces. Today, there is a growing expectation for richer, more natural, and even personalized forms of interaction.
+             Humanoid robots must not only perceive and interpret diverse human cues, but also respond in ways that are context-aware, socially intelligent, 
+             and acceptable to users. Achieving this requires moving beyond short-term interaction toward long-term human-robot co-adaptation. To this end, 
+             robotic systems must incorporate mechanisms to recognize and overcome their own limitations, continuously adapting their behavior to users and 
+             learning from natural human inputs. This third edition of our Human-Robot Interaction workshop aims to foster discussion on how robots can 
+             represent and understand their own skills, and model human behavior and state. From these foundations, mutual adaptation is the follow-up, with 
+             learning from human guidance the next step to overcome their limits. From the user perspective, interactions must be felt as natural and intuitive 
+             as possible, personalizable, and they must address the ethical and societal implications associated with long-term human-robot coexistence. 
+             Special attention will be given to adaptive behaviors in humanoids, robot self-awareness, online and incremental learning, personalized interaction,
+             shared autonomy, and cognitive and behavioral modeling of humans. The workshop will feature keynote talks by established researchers from 
+             academia and industry, an interactive panel discussion to actively engage the audience, and contributions from emerging researchers through 
+             short talks and a poster session.
+        </p>
 
 	    <ul>
 		  <li>Physical and social human-humanoids interaction.</li>
@@ -153,7 +70,7 @@ contributions will be made publicly available to maximize visibility and impact:
 		  <li>Embodied intelligence and adaptive behavior in humanoids</li>
 		  <li>Robot self-awareness of physical and social interaction skills</li>
 		  <li>Online and incremental learning for robot skill acquisition from human interventions</li>
-		  <li>Personalized human–robot interaction based on user preferences, abilities, and intent</li>
+		  <li>Personalized human-robot interaction based on user preferences, abilities, and intent</li>
 		  <li>Shared autonomy and collaborative decision-making</li>
 		  <li>Cognitive and behavioral modeling of humans in interaction loops</li>
 	      <li>Real-world applications of physical and social HRI with a focus on the mentioned topics</li>
@@ -162,66 +79,371 @@ contributions will be made publicly available to maximize visibility and impact:
 
 	    <p> This workshop is organized by:</p>
 	    <ul>
-		  <li>Dr. Parag Khanna, KTH, Sweden.</li>
-		  <li>Dr. Davide Torielli, TU Delft.</li>
-      <li>Dr. Damiano Gasperini, IIT, Italy.</li>  
-		  <li>Prof. Ziwei Wang, Lancaster University, UK.</li>
-		  <li>Dr. Angela Faragasso, Fingervision, Japan.</li>
-		  <li>Dr. Nikos Tsagarakis, IIT, Italy.</li>
-      <li>Dr. Debasmita Ghose, Yale University, USA.</li>  
-      <li>Prof. Luka Peternel, TU Delft, Netherlands.</li>  
-		  <li>Prof. Christian Smith, KTH, Sweden.</li>
-        
+            <li>Dr. Davide Torielli, TU Delft, Netherlands.</li>
+            <li>Dr. Damiano Gasperini, IIT, Italy.</li>
+            <li>Dr. Parag Khanna, KTH, Sweden.</li>
+            <li>Dr. Debasmita Ghose, Yale University, USA.</li>  
+            <li>Prof. Ziwei Wang, Lancaster University, UK.</li>
+            <li>Dr. Angela Faragasso, Fingervision, Japan.</li>
+            <li>Prof. Christian Smith, KTH, Sweden.</li>
+            <li>Dr. Nikos Tsagarakis, IIT, Italy.</li>
+            <li>Prof. Luka Peternel, TU Delft, Netherlands.</li>  
 	    </ul>
 
 	    <p> We acknolwedge the financial support by: </p>
-    <div class="row">
-        <!-- Organizer 1 -->
-	    
-        <div class="col-md-4">
-            <div class="organizer-card">
-                <img src="digital_futures.jpg" alt="Digital Futures" class="organizer-img">
-                <h6>Digital Futures,KTH, Sweden</h6>
-            </div>
-        </div>
+        <div class="row">
 
-	<!-- Organizer 2 -->
-        <div class="col-md-4">
-            <div class="organizer-card">
-                <img src="haria.jpeg" alt="Project HARIA" class="organizer-img">
-                <h6> European Project H2020 Haria (GA No. 101070292)</h6>
+            <div class="col-md-4">
+                <div class="organizer-card">
+                    <img src="img/nwo.svg" alt="nwo" class="ack-img">
+                    <h6>Dutch Research Council (NWO)</h6>
+                </div>
             </div>
-        </div>
 
-	<!-- Organizer 3 -->
-        <div class="col-md-4">
-            <div class="organizer-card">
-                <img src="eu_flag.jpeg" alt="EU" class="organizer-img">
-                <h6>European Union</h6>
+            <div class="col-md-4">
+                <div class="organizer-card">
+                    <img src="img/digital_futures.jpg" alt="Digital Futures" class="ack-img">
+                    <h6>Digital Futures,KTH, Sweden</h6>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="organizer-card">
+                    <img src="img/eu_flag.jpeg" alt="EU" class="ack-img">
+                    <h6>European Union</h6>
+                </div>
             </div>
         </div>
-    </div>
      </div>
 </div>
 
+
+
 <div class="container schedule" id="program">
     <div class="jumbotron">
-        <h2>Program Schedule</h2>
-	<p> The workshop is held in hybrid mode, Please Join the online Meeting: TBD,</p>
-	<p> If you are attending, please fill up this form alongwith some questions for the panelists in our panel discussions here: TBD</p>
 
-        TBD
+        <h2>Program Schedule</h2>
+
+        <!-- Workshop date and location -->
+        <div class="event-details">
+            <div class="event-detail">
+                <span class="event-icon">&#128197;</span>
+                <strong>Date &amp; Time Zone</strong>
+                <p>Monday 7 December 2026 · PST (UTC-8)</p>
+            </div>
+
+            <div class="event-detail">
+                <span class="event-icon">&#128205;</span>
+                <strong>Place</strong>
+                <p>Room TBD, Santa Clara Convention Center, California, USA</p>
+            </div>
+
+            <div class="event-detail">
+                <span class="event-icon">&#128249;</span>
+                <strong>Join Online</strong>
+                <p>
+                    <a href="https://teams.microsoft.com/meet/3288859773921603?p=bTzQPTjdkdDwwDSaLo"
+                    target="_blank"
+                    rel="noopener noreferrer">Microsoft Teams</a>
+                </p>
+            </div>
+
+            <div class="event-detail">
+                <span class="event-icon">&#127760;</span>
+                <strong>Main Conference</strong>
+                <p>
+                    <a href="https://2026.ieee-humanoids.org/"
+                    target="_blank"
+                    rel="noopener noreferrer">IEEE Humanoids 2026</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="program-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Program</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="time">08:50-09:00</td>
+                        <td><strong>Introduction</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="time">09:00-09:30</td>
+                        <td><strong>Speaker 1</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="time">09:30-10:00</td>
+                        <td><strong>Speaker 2</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="time">10:00-10:30</td>
+                        <td><strong>Speaker 3</strong></td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="time">10:30-11:00</td>
+                        <td>
+                            <span class="session-type break">Break</span>
+                            <strong>Conference Coffee Break</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time">11:00-11:30</td>
+                        <td><strong>Speaker 4</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="time">11:30-12:00</td>
+                        <td><strong>Speaker 5</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="time">12:00-12:30</td>
+                        <td>
+                            <strong>Speaker 6 — Prof. Dylan Loosey</strong>
+                            <p class="talk-title">
+                                Is it imitation learning? Or is it just
+                                language models?
+                            </p>
+                        </td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="time">12:30-13:30</td>
+                        <td>
+                            <span class="session-type break">Lunch</span>
+                            <strong>Conference Lunch</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time">13:30-14:00</td>
+                        <td>
+                            <span class="session-type panel">Round Table Q/A</span>
+                            <strong>What Will It Take for Humanoids to Truly
+                                Co-adapt with Humans?</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time">14:00-14:30</td>
+                        <td>
+                            <span class="session-type panel">Round Table Q/A</span>
+                            <strong>Round Table Q/A</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time">14:30-15:00</td>
+                        <td>
+                            <span class="session-type spotlight">Spotlights</span>
+                            <strong>Spotlight Talks</strong>
+                        </td>
+                    </tr>
+                    <tr class="break-row">
+                        <td class="time">15:00-15:30</td>
+                        <td>
+                            <span class="session-type break">Break</span>
+                            <strong>Conference Coffee Break</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time">15:30-16:00</td>
+                        <td>
+                            <span class="session-type spotlight">Spotlights</span>
+                            <strong>Spotlight Talks + Posters</strong>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="time">16:00-16:30</td>
+                        <td><strong>Speaker 7</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="time">16:30-17:00</td>
+                        <td><strong>Speaker 8</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
 
 <div class="container schedule" id="speakers">
-<div class="jumbotron home-jumbotron">
-        <h2>Speakers</h2>
-       <p>Meet our esteemed speakers from academia and industry.</p>
-		TBD
+    <div class="jumbotron home-jumbotron">
 
-</div>
+        <h2>Speakers</h2>
+        <p>Meet our esteemed speakers from academia and industry.</p>
+
+        <div class="speaker-grid">
+
+            <!-- Speaker 1 -->
+            <div class="speaker-card">
+                <div class="speaker-image-placeholder">Photo coming soon</div>
+                <div class="speaker-content">
+                    <h3>Speaker to be announced</h3>
+                    <p class="speaker-affiliation">Affiliation to be announced</p>
+
+                    <p class="speaker-talk-title">
+                        <strong>Talk:</strong> Title to be announced
+                    </p>
+                    <p class="speaker-time">
+                        <strong>Time:</strong> To be announced
+                    </p>
+
+                    <div class="speaker-tags">
+                        <span class="speaker-tag">TBA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 2 -->
+            <div class="speaker-card">
+                <div class="speaker-image-placeholder">Photo coming soon</div>
+                <div class="speaker-content">
+                    <h3>Speaker to be announced</h3>
+                    <p class="speaker-affiliation">Affiliation to be announced</p>
+
+                    <p class="speaker-talk-title">
+                        <strong>Talk:</strong> Title to be announced
+                    </p>
+                    <p class="speaker-time">
+                        <strong>Time:</strong> To be announced
+                    </p>
+
+                    <div class="speaker-tags">
+                        <span class="speaker-tag">TBA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 3 -->
+            <div class="speaker-card">
+                <div class="speaker-image-placeholder">Photo coming soon</div>
+                <div class="speaker-content">
+                    <h3>Speaker to be announced</h3>
+                    <p class="speaker-affiliation">Affiliation to be announced</p>
+
+                    <p class="speaker-talk-title">
+                        <strong>Talk:</strong> Title to be announced
+                    </p>
+                    <p class="speaker-time">
+                        <strong>Time:</strong> To be announced
+                    </p>
+
+                    <div class="speaker-tags">
+                        <span class="speaker-tag">TBA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 4 -->
+            <div class="speaker-card">
+                <div class="speaker-image-placeholder">Photo coming soon</div>
+                <div class="speaker-content">
+                    <h3>Speaker to be announced</h3>
+                    <p class="speaker-affiliation">Affiliation to be announced</p>
+
+                    <p class="speaker-talk-title">
+                        <strong>Talk:</strong> Title to be announced
+                    </p>
+                    <p class="speaker-time">
+                        <strong>Time:</strong> To be announced
+                    </p>
+
+                    <div class="speaker-tags">
+                        <span class="speaker-tag">TBA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 5: Dylan Losey -->
+            <div class="speaker-card">
+                <img class="speaker-photo"
+                    src="img/dylan.jpg"
+                    alt="Dylan Losey, Associate Professor at Virginia Tech">
+
+                <div class="speaker-content">
+                    <h3>Dylan Losey</h3>
+                    <p class="speaker-affiliation">
+                        Associate Professor, Virginia Tech, USA
+                    </p>
+
+                    <p class="speaker-talk-title">
+                        <strong>Talk:</strong>
+                        Is it imitation learning? Or is it just language models?
+                    </p>
+                    <p class="speaker-time">
+                        <strong>Time:</strong> 12:00-12:30
+                    </p>
+
+                    <div class="speaker-tags">
+                        <span class="speaker-tag academia">Academia</span>
+                        <span class="speaker-tag remote">Remote</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 6 -->
+            <div class="speaker-card">
+                <div class="speaker-image-placeholder">Photo coming soon</div>
+                <div class="speaker-content">
+                    <h3>Speaker to be announced</h3>
+                    <p class="speaker-affiliation">Affiliation to be announced</p>
+
+                    <p class="speaker-talk-title">
+                        <strong>Talk:</strong> Title to be announced
+                    </p>
+                    <p class="speaker-time">
+                        <strong>Time:</strong> To be announced
+                    </p>
+
+                    <div class="speaker-tags">
+                        <span class="speaker-tag">TBA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 7 -->
+            <div class="speaker-card">
+                <div class="speaker-image-placeholder">Photo coming soon</div>
+                <div class="speaker-content">
+                    <h3>Speaker to be announced</h3>
+                    <p class="speaker-affiliation">Affiliation to be announced</p>
+
+                    <p class="speaker-talk-title">
+                        <strong>Talk:</strong> Title to be announced
+                    </p>
+                    <p class="speaker-time">
+                        <strong>Time:</strong> To be announced
+                    </p>
+
+                    <div class="speaker-tags">
+                        <span class="speaker-tag">TBA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Speaker 8 -->
+            <div class="speaker-card">
+                <div class="speaker-image-placeholder">Photo coming soon</div>
+                <div class="speaker-content">
+                    <h3>Speaker to be announced</h3>
+                    <p class="speaker-affiliation">Affiliation to be announced</p>
+
+                    <p class="speaker-talk-title">
+                        <strong>Talk:</strong> Title to be announced
+                    </p>
+                    <p class="speaker-time">
+                        <strong>Time:</strong> To be announced
+                    </p>
+
+                    <div class="speaker-tags">
+                        <span class="speaker-tag">TBA</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <div class="container spotlight" id="accepted-papers">
@@ -241,31 +463,76 @@ contributions will be made publicly available to maximize visibility and impact:
     <div class="jumbotron">
         <h2>Call for Contributions</h2>
         <p>
-	We invite short paper submissions presenting late-breaking results, novel ideas, design case studies, or empirical findings on real-world physical and social human-robot interaction with humanoids. Accepted authors will receive ~5 minutes for spotlight presentations and participate in a 40-minute interactive poster session, engaging with an expected audience of 50–60 participants, including leading experts from academia and industry. Submit your work for a valuable opportunity to share, discuss, and collaborate on the key challenges and advances shaping the future of Human-Humanoids Robot Interaction. <br>
-            <strong>Date:</strong> December 6, 2025 (Full-day workshop)<br>
-            <strong>Location:</strong> Hybrid (California, USA and online), as part of The 2026 IEEE-RAS International Conference on Humanoid Robots, IEEE-Humanoids 2026.<br>
-            <strong>Submission Instruction:</strong> Email your contributions to: <a href="mailto:whsop.realworld.hri@gmail.com">whsop.realworld.hri@gmail.com</a><br>
-	    <strong>Important: Special Session in a IEEE-RAS Journal! </strong> We are currently in the process of submitting a proposal for a dedicated special issue in a related IEEE-Robotics and Automation Society journal (e.g. RA-L), focusing on advances in physical and social human-humanoid interaction, multimodal perception, adaptive communication, and real-world applications with humanoid robots, reflecting the key themes of the workshop. All workshop contributions will be invited to submit extended versions of their work for consideration in this special issue. If you are a researcher interested in contributing to this special issue, please contact us for more information.<br>
-            <strong>Contact for submissions:</strong> <a href="mailto:paragk@kth.se">paragk@kth.se</a>, <a href="mailto:paragk@kth.se">D.Torielli@tudelft.nl</a>.
+	        We invite short paper submissions presenting late-breaking results, 
+            novel ideas, design case studies, or empirical findings on real-world physical and 
+            social human-robot interaction with humanoids. 
+            Accepted authors will receive ~5 minutes for spotlight presentations and participate 
+            in the interactive poster session, 
+            Submit your work for a valuable opportunity to share, discuss, 
+            and collaborate on the key challenges and advances shaping the future of 
+            Human Robot Interaction. 
+            <br>
         </p>
         
-        <h3>IMPORTANT DATES</h3>
-        <ul>
-	    <li><strong>Submissions start:</strong> September 27, 2026</li>
-            <li><strong>Submission deadline:</strong> November 20, 2026</li>
-            <li><strong>Notification of acceptance:</strong> November 25, 2026</li>
-            <li><strong>Camera-ready deadline:</strong> December 1, 2026</li>
-            <li><strong>Workshop:</strong> December 6, 2026</li>
+        <h3 class="section-heading">Important Dates</h3>
+        <ul class="important-dates">
+            <li><strong>Submissions start</strong><span>October 13, 2026</span></li>
+            <li><strong>Submission deadline</strong><span>November 16, 2026</span></li>
+            <li><strong>Notification of acceptance</strong><span>November 20, 2026</span></li>
+            <li><strong>Presentation and Poster Session</strong><span>December 7, 2026</span></li>
         </ul>
-        <p>All deadlines are at 23:59 Anywhere on Earth time.</p>
-        <hr>
-        <hr>
-
-        <h3>SUBMISSION GUIDELINES</h3>
-        <p>
-            Manuscripts should be written in English and will undergo a single-blind review by the organizing committee and selected researchers from the field. The length should be 2-4 pages excluding references. We welcome contributions that include work in progress, preliminary results, technical reports, case studies, surveys, and state-of-the-art research. Position papers are also welcome and should be at least 2 pages excluding references. These can be research project proposals or plans without results. Authors must use the Humanoids templates provided, formatted for US Letter. The templates can be downloaded below.
+        <p class="deadline-note">
+            <span aria-hidden="true">&#128337;</span>
+            All deadlines are at 23:59 Anywhere on Earth (AoE).
         </p>
-        <p><strong>Manuscript Templates:</strong> <a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fras.papercept.net%2Fconferences%2Fsupport%2Ftex.php&data=05%7C02%7Cyadollah%40live.lancs.ac.uk%7C4ad413befc614cd18bf508dc7660b31a%7C9c9bcd11977a4e9ca9a0bc734090164a%7C0%7C0%7C638515404894323557%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=%2Fi%2B5zkzbpQa%2BM360ywxP0vBQR9gPfPs0vTolpHYrqS8%3D&reserved=0" target="_blank">LaTeX</a>, <a href="https://eur02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fras.papercept.net%2Fconferences%2Fsupport%2Fword.php&data=05%7C02%7Cyadollah%40live.lancs.ac.uk%7C4ad413befc614cd18bf508dc7660b31a%7C9c9bcd11977a4e9ca9a0bc734090164a%7C0%7C0%7C638515404894330332%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=XltFZwuZhQFRBmFIKSUVuFWXg27Yr8qTTtIofTl%2FbmI%3D&reserved=0" target="_blank">Word</a></p>
+
+                <h3 class="section-heading">Submission Guidelines</h3>
+
+        <p>
+            Manuscripts should be written in English and will undergo a
+            single-blind review by the organizing committee. The length should
+            be <strong>2-4 pages, excluding references</strong>. We welcome
+            contributions that include work in progress, preliminary results,
+            technical reports, project proposals, case studies, surveys, and
+            state-of-the-art research.
+        </p>
+
+        <p>
+            <strong>Templates:</strong> Authors must use the templates provided
+            by the main conference:
+        </p>
+
+        <ul class="template-links">
+            <li>
+                <a href="https://ras.papercept.net/conferences/support/tex.php"
+                   target="_blank"
+                   rel="noopener noreferrer">LaTeX Template</a>
+            </li>
+            <li>
+                <a href="https://ras.papercept.net/conferences/support/word.php"
+                   target="_blank"
+                   rel="noopener noreferrer">Word Template</a>
+            </li>
+        </ul>
+
+        <p class="submission-contact">
+            <strong>Email your contributions</strong> to
+            <a href="mailto:whsop.realworld.hri@gmail.com">
+                whsop.realworld.hri@gmail.com
+            </a>.<br>
+            Any questions about submissions can be sent to 
+            <a href="mailto:d.torielli@tudelft.nl">d.torielli@tudelft.nl</a>,
+            <a href="mailto:damiano.gasperini@iit.it">damiano.gasperini@iit.it</a>,
+            <a href="mailto:paragk@kth.se">paragk@kth.se</a>,
+        </p>
+
+        <p class="presentation-note">
+            <strong>Presentation requirement:</strong> At least one author of
+            each accepted contribution will be asked to present their work
+            through a short talk (duration ~5min) and a poster during
+            the dedicated poster-session timeslot.
+        </p>
+        <p>
     </div>
 </div>
 
@@ -274,36 +541,84 @@ contributions will be made publicly available to maximize visibility and impact:
  <div class="jumbotron">
     <h2>Organizers and Contact</h2>
     <p><strong>Organizers:</strong></p>
-    TBD
-	<p> We acknolwedge the financial support by: </p>
     <div class="row">
-        <!-- Organizer 1 -->
-	    
+
         <div class="col-md-4">
             <div class="organizer-card">
-                <img src="digital_futures.jpg" alt="Digital Futures" class="organizer-img">
-                <h3>Digital Futures,KTH, Sweden</h3>
+                <img src="img/davide.jpeg" alt="Davide Torielli" class="organizer-img">
+                <h3>Davide Torielli</h3>
+                <p>PostDoctoral Researcher, TU Delft, Netherlands: <a href="mailto:d.torielli@tudelft.nl">d.torielli@tudelft.nl</a> </p>
             </div>
         </div>
 
-	<!-- Organizer 2 -->
         <div class="col-md-4">
             <div class="organizer-card">
-                <img src="haria.jpeg" alt="Project HARIA" class="organizer-img">
-                <h3> European Project H2020 Haria (GA No. 101070292)</h3>
+                <img src="img/damia.png" alt="Damiano Gasperini" class="organizer-img">
+                <h3>Damiano Gasperini</h3>
+                <p>PostDoctoral Researcher, Italian Institute of Technology, Italy: <a href="mailto:damiano.gasperini@iit.it">damiano.gasperini@iit.it</a> </p>
             </div>
         </div>
 
-	<!-- Organizer 3 -->
         <div class="col-md-4">
             <div class="organizer-card">
-                <img src="eu_flag.jpeg" alt="EU" class="organizer-img">
-                <h3>European Union</h3>
+                <img src="img/parag.jpeg" alt="Parag Khanna" class="organizer-img">
+                <h3>Parag Khanna</h3>
+                <p>PostDoctoral Researcher, KTH Royal Institute of Technology, Sweden <a href="mailto:paragk@kth.se">paragk@kth.se</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="img/debasmita.jpg" alt="Debasmita Ghose" class="organizer-img">
+                <h3>Debasmita Ghose</h3>
+                <p>Researcher, Yale University, USA <a href="mailto:debasmita.ghose@yale.edu">debasmita.ghose@yale.edu</a></p>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="img/ziwei.jpg" alt="Ziwei Wang" class="organizer-img">
+                <h3>Ziwei Wang</h3>
+                <p>Assistant Professor, Lancaster University, United Kingdom: <a href="mailto:z.wang82@lancaster.ac.uk">z.wang82@lancaster.ac.uk</a></p>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="img/angela.jpg" alt="Angela Faragasso" class="organizer-img">
+                <h3>Angela Faragasso</h3>
+                <p> Lead Researcher Engineer, Finger Vision Inc., Japan: <a href="mailto:angela.faragaso@fingervision.biz">angela.faragaso@fingervision.biz</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="img/nikos.jpeg" alt="Nikos Tsagarakis" class="organizer-img">
+                <h3>Nikos Tsagarakis</h3>
+                <p>Principal Investigator, Italian Institute of Technology, Italy: <a href="mailto:Nikos.tsagarakis@iit.it">nikos.tsagarakis@iit.it</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="img/chirstian.jpg" alt="Christian Smith" class="organizer-img">
+                <h3>Christian Smith</h3>
+                <p>Associate Professor, KTH Royal Institute of Technology, Sweden: <a href="mailto:ccs@kth.se">ccs@kth.se</a></p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="organizer-card">
+                <img src="img/luka.jpg" alt="Luka Peternel" class="organizer-img">
+                <h3>Luka Peternel</h3>
+                <p>Associate Professor, TU Delft, Netherlands: <a href="mailto:l.peternel@tudelft.nl">l.peternel@tudelft.nl</a></p>
             </div>
         </div>
     </div>
- </div>
-</div>
+
+
 <div class="footer">
     <p>&copy; 2026 Humanoids RW-HRI. All rights reserved.</p>
 </div>

@@ -1,0 +1,509 @@
+body {
+    font-family: Arial, sans-serif;
+background-image: url("img/humanoid_handover_man_full.jpg");
+background-size: cover;
+background-position: center;
+opacity: 0.95;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.container {
+    margin-top: 20px;
+}
+.footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.schedule {
+    display: none;
+}
+
+/* Styles for all  jumbotron */
+.jumbotron {
+    background-color: #ddffff; /* Lighter blue background for Program */
+}
+
+/* Styles for the "Home" jumbotron */
+.home-jumbotron {
+    background-color: #ddffff; /* Light blue background for Home */
+}
+
+
+.organizer-img {
+width: 150px; /* Set a fixed width */
+height: 150px; /* Set a fixed height */
+object-fit: contain; /* Ensures the image is properly cropped */
+border-radius: 50%; /* Optional: Make the images circular */
+display: block;
+margin: 0 auto 10px; /* Center the image */
+}
+
+.ack-img {
+width: 150px; /* Set a fixed width */
+height: 150px; /* Set a fixed height */
+object-fit: contain; /* Ensures the image is properly cropped */
+display: block;
+margin: 0 auto 10px; /* Center the image */
+}
+
+.organizer-card {
+text-align: center; /* Center text and image */
+margin-bottom: 30px;
+}
+
+	
+
+/* Workshop program schedule */
+.schedule .program-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 24px 0;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Table header */
+.schedule .program-table thead th {
+    background: #17365d;
+    color: #ffffff;
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Table cells */
+.schedule .program-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e8edf3;
+    vertical-align: top;
+}
+
+/* Time column */
+.schedule .program-table .time {
+    width: 155px;
+    white-space: nowrap;
+    color: #17365d;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    background: #f5f8fc;
+}
+
+/* Alternating rows */
+.schedule .program-table tbody tr:nth-child(even) td:not(.time) {
+    background: #f8fafc;
+}
+
+/* Hover effect */
+.schedule .program-table tbody tr:hover td {
+    background: #edf4fc;
+}
+
+/* Remove the last border */
+.schedule .program-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Session titles */
+.schedule .program-table .talk-title {
+    margin: 5px 0 0;
+    color: #526174;
+}
+
+.schedule .program-table .role {
+    color: #64748b;
+    margin-left: 4px;
+}
+
+/* Session labels */
+.schedule .session-type {
+    display: inline-block;
+    padding: 3px 9px;
+    margin: 0 8px 5px 0;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.schedule .keynote {
+    color: #1d4ed8;
+    background: #dbeafe;
+}
+
+.schedule .panel {
+    color: #7e22ce;
+    background: #f3e8ff;
+}
+
+.schedule .break {
+    color: #166534;
+    background: #dcfce7;
+}
+
+.schedule .spotlight {
+    color: #9a3412;
+    background: #ffedd5;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .schedule .program-table {
+        font-size: 14px;
+    }
+
+    .schedule .program-table thead th,
+    .schedule .program-table td {
+        padding: 12px 10px;
+    }
+
+    .schedule .program-table .time {
+        width: 105px;
+        white-space: normal;
+        font-size: 13px;
+    }
+}
+
+/* Speakers grid */
+.speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+/* Individual speaker card */
+.schedule .speaker-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(15, 23, 42, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.schedule .speaker-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.10);
+}
+
+/* Temporary image placeholder */
+.speaker-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    background: #f1f5f9;
+    color: #64748b;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid #e2e8f0;
+}
+.speaker-photo {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    object-position: center;
+    background: #f1f5f9;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Speaker details */
+.speaker-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+    padding: 22px;
+}
+
+.schedule .speaker-card h3 {
+    margin: 0 0 10px;
+    color: #17365d;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+.speaker-affiliation {
+    margin: 0 0 18px;
+    color: #526174;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* Category and attendance labels */
+.speaker-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.speaker-tag {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Academic / industry categories */
+.speaker-tag.academia {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.speaker-tag.industry {
+    background: #f3e8ff;
+    color: #7e22ce;
+}
+
+/* Attendance status */
+.speaker-tag.presence {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.speaker-tag.remote {
+    background: #ffedd5;
+    color: #9a3412;
+}
+
+.speaker-tag.tentative {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* Attendance footnote */
+.speaker-footnote {
+    margin-top: 24px;
+    color: #64748b;
+    font-size: 13px;
+}
+
+/* Tablet and mobile layouts */
+@media (max-width: 767px) {
+    .speaker-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .speaker-image-placeholder {
+        min-height: 150px;
+    }
+
+    .speaker-content {
+        padding: 18px;
+    }
+}
+
+
+.speaker-tag:not(.academia):not(.industry):not(.presence):not(.remote):not(.tentative) {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+/* Speaker talk details */
+.speaker-talk-title {
+    margin: 0 0 10px;
+    color: #334155;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.speaker-time {
+    display: inline-block;
+    margin: 0 0 18px;
+    padding: 6px 10px;
+    background: #f1f5f9;
+    border-radius: 5px;
+    color: #17365d;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.speaker-talk-title strong,
+.speaker-time strong {
+    color: #17365d;
+}
+
+/* Workshop date, location and time zone */
+.event-details {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin: 24px 0;
+}
+
+.event-detail {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 14px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    min-width: 0;
+}
+
+.event-icon {
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+.event-detail strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #17365d;
+    font-size: 14px;
+    margin: 0;
+}
+
+.event-detail p {
+    margin: 0;
+    color: #526174;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .event-details {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .event-detail {
+        padding: 14px;
+    }
+}
+
+/* Section headings */
+.section-heading {
+    margin-top: 28px;
+    margin-bottom: 16px;
+    color: #17365d;
+    font-size: 1.25rem;
+}
+
+/* Important dates */
+.important-dates {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.important-dates li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e2e8f0;
+    background: #ffffff;
+}
+
+.important-dates li:last-child {
+    border-bottom: none;
+}
+
+.important-dates li:nth-child(even) {
+    background: #f8fafc;
+}
+
+.important-dates li strong {
+    color: #334155;
+}
+
+.important-dates li span {
+    color: #475569;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Deadline note */
+.deadline-note {
+    margin-top: 12px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Submission contact highlight */
+.submission-contact {
+    margin: 20px 0;
+    padding: 16px 18px;
+    background: #f1f5f9;
+    border-left: 4px solid #2563eb;
+    border-radius: 6px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.submission-contact a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.submission-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .important-dates li {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .important-dates li span {
+        text-align: left;
+        white-space: normal;
+    }
+}
+
+.template-links {
+    margin: 0 0 20px;
+    padding-left: 24px;
+}
+
+.template-links li {
+    margin-bottom: 8px;
+}
+
+.template-links a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.template-links a:hover {
+    text-decoration: underline;
+}
+
+.presentation-note {
+    padding: 16px 18px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    line-height: 1.7;
+}
