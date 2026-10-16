@@ -289,6 +289,13 @@ margin-bottom: 30px;
     color: #92400e;
 }
 
+.speaker-tag.time {
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 600;
+}
+
 /* Attendance footnote */
 .speaker-footnote {
     margin-top: 24px;
@@ -318,28 +325,50 @@ margin-bottom: 30px;
     color: #475569;
 }
 
-/* Speaker talk details */
+/* Talk title: main visual focus */
 .speaker-talk-title {
-    margin: 0 0 10px;
-    color: #334155;
-    font-size: 14px;
-    line-height: 1.6;
+    margin: 18px 0 10px;
+    color: #17365d;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
-.speaker-time {
-    display: inline-block;
-    margin: 0 0 18px;
-    padding: 6px 10px;
-    background: #f1f5f9;
-    border-radius: 5px;
-    color: #17365d;
+
+/* Abstract and bio: secondary information */
+.speaker-abstract,
+.speaker-bio {
+    margin-top: 14px;
+    color: #64748b;
     font-size: 13px;
-    line-height: 1.5;
+    line-height: 1.7;
 }
 
-.speaker-talk-title strong,
-.speaker-time strong {
-    color: #17365d;
+.speaker-abstract h4,
+.speaker-bio h4 {
+    margin: 0 0 5px;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.speaker-abstract p,
+.speaker-bio p {
+    margin: 0;
+}
+
+/* Slightly tighter spacing on small screens */
+@media (max-width: 480px) {
+    .speaker-talk-title {
+        font-size: 17px;
+    }
+
+    .speaker-abstract,
+    .speaker-bio {
+        font-size: 12.5px;
+    }
 }
 
 /* Workshop date, location and time zone */
